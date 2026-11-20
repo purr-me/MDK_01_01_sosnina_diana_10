@@ -14,8 +14,8 @@ namespace Human_Sosnina.Classes
 
         public Human(string name, string img)
         {
-            Name = name;
-            Img = img;
+            this.Name = name;
+            this.Img = img;
         }
 
         public abstract void Speak(Label Phrase);
