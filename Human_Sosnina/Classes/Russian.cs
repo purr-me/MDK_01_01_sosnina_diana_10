@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
@@ -45,9 +44,9 @@ namespace Human_Sosnina.Classes
         {
             List<Phrase> allPhrases = new List<Phrase>();
 
-            allPhrases.Add(new Phrase("Привет", @"Human_Sosnina\\Human_Sosnina\\Voices\\Привет.mp3"));
-            allPhrases.Add(new Phrase("Как дела?", @"Human_Sosnina\\Human_Sosnina\\Voices\\Как дела.mp3"));
-            allPhrases.Add(new Phrase("Меня зовут Александр", @"Human_Sosnina\\Human_Sosnina\\Voices\\Меня зовут.mp3"));
+            allPhrases.Add(new Phrase("Привет", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Voices\Привет.mp3"));
+            allPhrases.Add(new Phrase("Как дела?", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Voices\Как дела.mp3"));
+            allPhrases.Add(new Phrase("Меня зовут Александр", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Voices\Меня зовут.mp3"));
 
             return allPhrases;
         }

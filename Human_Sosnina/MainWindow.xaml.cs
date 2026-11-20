@@ -20,9 +20,14 @@ namespace Human_Sosnina
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MediaPlayer MediaPlayer = new MediaPlayer();
+
+        private Classes.Russian Russian = new Classes.Russian("Александр", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Images\ic_russian.png");
+
         public MainWindow()
         {
             InitializeComponent();
+            Parent.Children.Add(new Elements.Item(Russian));
         }
     }
 }
