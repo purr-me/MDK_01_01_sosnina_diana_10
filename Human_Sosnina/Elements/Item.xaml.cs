@@ -20,7 +20,7 @@ namespace Human_Sosnina.Elements
     /// </summary>
     public partial class Item : UserControl
     {
-        Classes.Human Human;
+        public Classes.Human Human;
         public Item(object Data)
         {
             InitializeComponent();
@@ -33,5 +33,8 @@ namespace Human_Sosnina.Elements
 
         private void Speak(object sender, MouseButtonEventArgs e) =>
             Human.Speak(lText);
+
+
+        
     }
 }

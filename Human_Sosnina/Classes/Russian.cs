@@ -10,22 +10,8 @@ namespace Human_Sosnina.Classes
     public class Russian : Human
     {
         List<Phrase> Phrases {  get; set; }
-        int stepAudio;
-        int StepAudio
-        {
-            get
-            {
-                return stepAudio;
-            }
-            set
-            {
-                stepAudio = value;
-                if (stepAudio > Phrases.Count - 1)
-                {
-                    stepAudio = 0;
-                }
-            }
-        }
+        public int StepAudio = 0;
+
 
         public Russian(string name, string img) : base(name, img)
         {
@@ -34,9 +20,17 @@ namespace Human_Sosnina.Classes
 
         public override void Speak(Label Phrase)
         {
+            if (Phrases.Count == 0) return;
+
+            if (StepAudio >= Phrases.Count)
+            {
+                StepAudio = 0;
+            }
+
             Phrase.Content = Phrases[StepAudio]._Phrase;
             MainWindow.MediaPlayer.Open(new Uri(Phrases[StepAudio].Src));
             MainWindow.MediaPlayer.Play();
+
             StepAudio++;
         }
 
