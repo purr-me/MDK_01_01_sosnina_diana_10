@@ -27,9 +27,11 @@ namespace Human_Sosnina
 
         private Classes.English English = new Classes.English("Alexander", @"C:\Users\Student-A502.PERMAVIAT\Source\Repos\MDK_01_01_sosnina_diana_10\Human_Sosnina\Images\ic_english.png");
 
+        private Classes.Deutsch Deutsch = new Classes.Deutsch("Leia", @"C:\Users\Student-A502.PERMAVIAT\Source\Repos\MDK_01_01_sosnina_diana_10\Human_Sosnina\Images\ic_deutsch.png");
 
         private Elements.Item ItemRussian;
         private Elements.Item ItemEnglish;
+        private Elements.Item ItemDeutsch;
 
         DispatcherTimer timer = new DispatcherTimer();
 
@@ -40,11 +42,12 @@ namespace Human_Sosnina
 
             ItemRussian = new Elements.Item(Russian);
             ItemEnglish = new Elements.Item(English);
-
+            ItemDeutsch = new Elements.Item(Deutsch);
 
 
             Parent.Children.Add(ItemRussian);
             Parent.Children.Add(ItemEnglish);
+            Parent.Children.Add(ItemDeutsch);
 
 
             timer.Interval = TimeSpan.FromMilliseconds(2000);
