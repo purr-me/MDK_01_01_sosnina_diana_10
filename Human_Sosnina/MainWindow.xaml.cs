@@ -23,9 +23,9 @@ namespace Human_Sosnina
     {
         public static MediaPlayer MediaPlayer = new MediaPlayer();
 
-        private Classes.Russian Russian = new Classes.Russian("Александр", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Images\ic_russian.png");
+        private Classes.Russian Russian = new Classes.Russian("Александр", @"C:\Users\Student-A502.PERMAVIAT\Source\Repos\MDK_01_01_sosnina_diana_10\Human_Sosnina\Images\ic_russian.png");
 
-        private Classes.English English = new Classes.English("Alexander", @"D:\\хуйня\\w\\Human_Sosnina\\Human_Sosnina\\Images\\ic_english.png");
+        private Classes.English English = new Classes.English("Alexander", @"C:\Users\Student-A502.PERMAVIAT\Source\Repos\MDK_01_01_sosnina_diana_10\Human_Sosnina\Images\ic_english.png");
 
 
         private Elements.Item ItemRussian;
@@ -43,8 +43,9 @@ namespace Human_Sosnina
 
 
 
-            Parent.Children.Add(new Elements.Item(Russian));
-            Parent.Children.Add(new Elements.Item(English));
+            Parent.Children.Add(ItemRussian);
+            Parent.Children.Add(ItemEnglish);
+
 
             timer.Interval = TimeSpan.FromMilliseconds(2000);
             timer.Tick += Timer_Tick;

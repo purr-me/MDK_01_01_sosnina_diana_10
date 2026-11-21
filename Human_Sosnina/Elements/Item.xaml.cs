@@ -34,7 +34,5 @@ namespace Human_Sosnina.Elements
         private void Speak(object sender, MouseButtonEventArgs e) =>
             Human.Speak(lText);
 
-
-        
     }
 }

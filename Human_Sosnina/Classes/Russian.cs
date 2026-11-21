@@ -38,9 +38,9 @@ namespace Human_Sosnina.Classes
         {
             List<Phrase> allPhrases = new List<Phrase>();
 
-            allPhrases.Add(new Phrase("Привет", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Voices\Привет.mp3"));
-            allPhrases.Add(new Phrase("Как дела?", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Voices\Как дела.mp3"));
-            allPhrases.Add(new Phrase("Меня зовут Александр", @"D:\хуйня\w\Human_Sosnina\Human_Sosnina\Voices\Меня зовут.mp3"));
+            allPhrases.Add(new Phrase("Привет", @"C:\Users\Student-A502.PERMAVIAT\Source\Repos\MDK_01_01_sosnina_diana_10\Human_Sosnina\Voices\Привет.mp3"));
+            allPhrases.Add(new Phrase("Как дела?", @"C:\Users\Student-A502.PERMAVIAT\Source\Repos\MDK_01_01_sosnina_diana_10\Human_Sosnina\Voices\Как дела.mp3"));
+            allPhrases.Add(new Phrase("Меня зовут Александр", @"C:\Users\Student-A502.PERMAVIAT\Source\Repos\MDK_01_01_sosnina_diana_10\Human_Sosnina\Voices\Меня зовут.mp3"));
 
             return allPhrases;
         }
